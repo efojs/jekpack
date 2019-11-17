@@ -25,6 +25,27 @@ $ cd hello-world
 $ jekpack bundle
 ``` 
 
+**Add to existing project**
+- create `package.json` in your project with the following settings (or better copy from newly created):
+```json
+{
+  "name": "PROJECT_NAME",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "@bincode/jekpack": "^1.8.0"
+  },
+  "scripts": {
+    "dev": "jekpack dev",
+    "build": "jekpack build",
+    "bundle": "jekpack bundle"
+  }
+}
+```
+- add `gem 'pry'` to Gemfile
+- navigate to project folder `$ cd PROJECT_PATH`
+- run `$ jekpack bundle`
+
 **Start Dev Servers**
 
 ```sh
